@@ -1,22 +1,22 @@
 import React from "react";
 
-function Card() {
+function Card({ name, city, job, age, experience, image }) {
   return (
     <div className="card">
       <div className="card-image">
-        <img src="/public/images/user1.jfif" alt="Team Member" />
+        <img src={`/images/${image}`} alt="Team Member" />
       </div>
 
       <div className="card-body">
-        <h2>Ali Sadeghi</h2>
+        <h2>{name}</h2>
 
-        <p>Programmer</p>
+        <p>{job}</p>
 
-        <p>Tehran</p>
+        <p>{city}</p>
 
-        <p>33 Years Old</p>
+        <p>{age} Years Old</p>
 
-        <p>10 Years Experience</p>
+        <p>{experience} Experience</p>
       </div>
     </div>
   );
