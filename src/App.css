@@ -1,0 +1,48 @@
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #666;
+}
+.card {
+  width: 320px;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+}
+
+.card-image img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h2 {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.card-body p {
+  margin: 8px 0;
+  color: #555;
+}
