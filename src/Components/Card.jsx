@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card({ name, city, job, age, experience, image }) {
+function Card({ name, city, job, age, experience, image, level }) {
   return (
     <div className="card">
       <div className="card-image">
@@ -17,6 +17,8 @@ function Card({ name, city, job, age, experience, image }) {
         <p>{age} Years Old</p>
 
         <p>{experience} Experience</p>
+
+        <p className={level === "Senior" ? "senior" : "normal"}>{level}</p>
       </div>
     </div>
   );

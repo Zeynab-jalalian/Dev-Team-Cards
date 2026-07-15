@@ -56,3 +56,21 @@
   justify-content: center;
   gap: 25px;
 }
+.level-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.senior {
+  background-color: #ffd700;
+  color: #333;
+}
+
+.normal {
+  background-color: #e0e0e0;
+  color: #555;
+}

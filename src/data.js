@@ -6,6 +6,7 @@ const users = [
     job: "Programmer",
     age: 33,
     experience: "10 Years",
+    level: "Senior",
     image: "user1.jfif",
   },
   {
@@ -15,6 +16,7 @@ const users = [
     job: "UI/UX Designer",
     age: 27,
     experience: "5 Years",
+    level: "Mid-Level",
     image: "user2.jfif",
   },
   {
@@ -24,6 +26,7 @@ const users = [
     job: "Backend Developer",
     age: 31,
     experience: "8 Years",
+    level: "Senior",
     image: "user3.jfif",
   },
   {
@@ -33,6 +36,7 @@ const users = [
     job: "Frontend Developer",
     age: 24,
     experience: "2 Years",
+    level: "Junior",
     image: "user4.jpg",
   },
   {
@@ -42,6 +46,7 @@ const users = [
     job: "DevOps Engineer",
     age: 35,
     experience: "11 Years",
+    level: "Senior",
     image: "user5.jfif",
   },
   {
@@ -51,7 +56,9 @@ const users = [
     job: "Mobile Developer",
     age: 29,
     experience: "6 Years",
+    level: "Mid-Level",
     image: "user6.jfif",
   },
 ];
+
 export default users;
