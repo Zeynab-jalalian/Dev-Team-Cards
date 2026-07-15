@@ -1,8 +1,18 @@
 import React from "react";
 
-function Card({ name, city, job, age, experience, image, level }) {
+function Card({
+  id,
+  name,
+  city,
+  job,
+  age,
+  experience,
+  image,
+  level,
+  clickedCard,
+}) {
   return (
-    <div className="card">
+    <div className="card" onClick={() => clickedCard(id)}>
       <div className="card-image">
         <img src={`/images/${image}`} alt="Team Member" />
       </div>
