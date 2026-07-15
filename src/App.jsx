@@ -9,12 +9,9 @@ function App() {
     <>
       <Header />
       <div className="cards-container">
-        <Card {...data[0]} />
-        <Card {...data[1]} />
-        <Card {...data[2]} />
-        <Card {...data[3]} />
-        <Card {...data[4]} />
-        <Card {...data[5]} />
+        {data.map((item) => {
+          return <Card {...item} key={item.id} />;
+        })}
       </div>
     </>
   );
