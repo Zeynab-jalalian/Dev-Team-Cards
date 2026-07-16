@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Components/Header";
 import "./App.css";
 import Card from "./Components/Card";
 import data from "./data.js";
+import Selected from "./Components/Selected.jsx";
 
 function App() {
+  const [selectedUser, setSelectedUser] = useState();
   const clickedCard = (id) => {
-    const selectedUser = data.find((item) => {
+    const user = data.find((item) => {
       return item.id === id;
     });
-
-    alert(selectedUser.name);
+    setSelectedUser(user);
   };
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
           return <Card {...item} key={item.id} clickedCard={clickedCard} />;
         })}
       </div>
+      <Selected selectedUser={selectedUser} />
     </>
   );
 }
